@@ -42,3 +42,16 @@ create table bookings (
     total_cost int not null
     
 );
+
+
+
+-- =========================================================================
+-- Multiple users sample data Insert  into USERS
+-- =========================================================================
+
+insert into users (full_name, email, role, phone_number)
+values
+  ('Tanvir Rahman', 'tanvir@mail.com', 'Football Fan', '+8801711111111'),
+  ('Asif Haque', 'asif@mail.com', 'Football Fan', '+8801722222222'),
+  ('Sajjad Rahman', 'sajjad@mail.com', 'Ticket Manager', '+8801733333333'),
+  ('Jannat Ara', 'jannat@mail.com', 'Football Fan', NULL)
