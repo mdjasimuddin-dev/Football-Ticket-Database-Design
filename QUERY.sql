@@ -15,3 +15,16 @@ create table users (
     role varchar(20) check( role in('Football Fan', 'Ticket Manager')) default 'Football Fan' not null,
     phone_number varchar(15)
 );
+
+
+-- =========================================================================
+-- 2. CREATE MATCHES TABLE
+-- =========================================================================
+
+  create table matches (
+    match_id serial primary key,
+    fixture varchar(30) not null,
+    tournament_category varchar(25) not null,
+    base_ticket_price int not null,
+    match_status varchar(15) check(match_status in('Available', 'Selling Fast', 'Sold Out')) default  'Available' not null
+);
